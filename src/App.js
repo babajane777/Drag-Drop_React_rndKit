@@ -22,7 +22,7 @@ const App = () => {
   ]);
 
 
-  const reorderGamesList = (e: DragEndEvent) => {
+  const reorderGamesList = (e) => {
     if (!e.over) return;
 
     if (e.active.id !== e.over.id) {

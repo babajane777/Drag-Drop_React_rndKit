@@ -1,10 +1,10 @@
 import { useSortable } from "@dnd-kit/sortable";
-import styles from './gameItem.css';
+import './gameItem.css';
 import { CSS } from "@dnd-kit/utilities";
 
 const GameItem = ({id, color, children}) => {
-  const { attributes, listeners, setNodeRef, transform, transition } =
-    useSortable({ id });
+
+  const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });
 
   return (
     <div
